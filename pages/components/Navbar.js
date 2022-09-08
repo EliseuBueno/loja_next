@@ -14,6 +14,7 @@ import Menu from '@mui/material/Menu';
 import Link from 'next/link';
 import { Button } from '@mui/material';
 import HomeIcon from '@mui/icons-material/Home';
+import FeedIcon from '@mui/icons-material/Feed';
 
 export default function MenuAppBar() {
     const [auth, setAuth] = React.useState(true);
@@ -58,7 +59,12 @@ export default function MenuAppBar() {
                     </IconButton>
                     <Link href="/">
                         <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-                            <Button href="/" variant="contained" endIcon={<HomeIcon />}></Button>
+                            <Button href="/" variant="contained" endIcon={<HomeIcon />}>Home</Button>
+                        </Typography>
+                    </Link>
+                    <Link href="/about">
+                        <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+                            <Button href="/" variant="contained" endIcon={<FeedIcon />}>Sobre</Button>
                         </Typography>
                     </Link>
                     {auth && (
