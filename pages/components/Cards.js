@@ -10,14 +10,14 @@ export default function Cards({ pokemon }) {
                         <CardMedia
                             component="img"
                             height="340"
-                            image={`https://cdn.traction.one/pokedex/pokemon/${pokemon.id}.png`}
+                            // image={`https://cdn.traction.one/pokedex/pokemon/${pokemon.id}.png`}
                             // image="/images/charizard.png"
                             alt="green iguana"
                         />
                         <CardContent>
-                            <Typography gutterBottom variant="p" component="div">
+                            {/* <Typography gutterBottom variant="p" component="div">
                                 {pokemon.id}
-                            </Typography>
+                            </Typography> */}
                             <Typography gutterBottom variant="h5" component="div">
                                 {pokemon.name}
                             </Typography>
