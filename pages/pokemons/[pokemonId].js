@@ -57,11 +57,6 @@ export default function Pokemon({ pokemon }) {
                             Lizards are a widespread group of squamate reptiles, with over 6,000
                             species, ranging across all continents except Antarctica
                         </Typography>
-                        <Link href={`/pokemons/${pokemon.id}`}>
-                            <a>
-                                Detalhes
-                            </a>
-                        </Link>
                     </CardContent>
                 </CardActionArea>
             </Card>
