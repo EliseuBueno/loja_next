@@ -1,4 +1,5 @@
 import styles from '../styles/Home.module.css'
+import Cards from './components/Cards'
 
 export async function getStaticProps() {
   const maxPokemons = 251 //informa o número máximo de pokemons
@@ -24,7 +25,7 @@ export default function Home({ pokemons }) {
       <h1>PokeNext</h1>
       <ul>
         {pokemons.map((pokemon) => (
-          <li key={pokemon.id}>{pokemon.name}</li>
+          <Cards key={pokemon.id} pokemon={pokemon} />
         ))}
       </ul>
     </div>
