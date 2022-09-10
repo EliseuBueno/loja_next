@@ -33,11 +33,6 @@ export default function Cards({ pokemon }) {
                         </CardContent>
                     </CardActionArea>
                 </Card>
-                {/* <Image
-                src={`https://cdn.traction.one/pokedex/pokemon/${pokemon.id}.png`}
-                width="120"
-                height="120"
-                alt={pokemon.name} /> */}
             </Grid>
         </Grid>
     )
